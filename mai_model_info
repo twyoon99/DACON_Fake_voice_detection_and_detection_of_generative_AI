@@ -1,0 +1,60 @@
+'baseline_submit_mai_115_1.csv'
+'baseline_submit_mai_114_1.csv'
+'baseline_submit_mai_112_1.csv'
+'baseline_submit_mai_112_2_sig.csv'
+'baseline_submit_mai_112_2_1.csv'
+'baseline_submit_mai_112_2_2.csv'
+'baseline_submit_mai_114_2_2.csv'
+'baseline_submit_mai_115_2_2.csv'
+
+모든 파일에 validation에 sigmoid 한번 더 진행 (총 2번)
+-> 빠른 학습, overfitting 막기 위해 사용
+
+<< csv 파일에 sigmoid (base) >>
+
+[mai 114_1]
+batch : 32
+hidden_dim : 512
+augmentation : noise, time_masking
+optimizer : adam
+scheduler : CosineAnnealingLR
+model : CNNLSTMWithBatchNorm
+LR : 0.001
+epoch : 5
+inference : 5개 사용(1초 간격)
+
+[mai 112_1]
+batch : 64
+hidden_dim : 128
+augmentation : noise, time_masking
+optimizer : adam
+scheduler : CosineAnnealingLR
+model : CNNLSTMWithBatchNorm
+LR : 0.001
+epoch : 5
+inference : 5개 사용(1초 간격)
+
+[mai 112_2_sig]
+112와 동일, inference 변형
+inference : 12개 사용(0.5,0.8,1초 간격)
+
+[mai 115_1]
+batch : 32
+hidden_dim : 512 (add LSTM 1 layer)
+augmentation : noise, time_masking
+optimizer : adam
+scheduler : CosineAnnealingLR
+model : CNNLSTMDeep
+LR : 0.001
+epoch : 5
+inference : 5개 사용(1초 간격)
+
+
+<< csv 파일에 sigmoid (k=0.5) >>
+
+[mai 114_2_2]
+[mai 112_2_1]
+[mai 112_2_2]
+[mai 115_2_2]
+
+- model 자세한 내용은 base sigmoid와 같음 sigmoid 방식만 바뀐 것.
