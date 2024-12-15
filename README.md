@@ -2,7 +2,5 @@
 
 
 ## 생성 AI의 가짜(Fake) 음성 검출 및 탐지 
-
-
 ## 14th place out of 219 teams (top 7%)
 ---
