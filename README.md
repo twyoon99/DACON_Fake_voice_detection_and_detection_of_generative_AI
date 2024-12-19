@@ -5,8 +5,7 @@
 ## 14th place out of 219 teams (top 7%)
 ---
 
-
-[[MAI] SW중심대학 디지털 경진대회 AI부문 최종 산출물 제출_포스터.pdf](https://github.com/user-attachments/files/18194789/MAI.SW.AI._.pdf)
+![image](https://github.com/user-attachments/assets/fe30192a-302c-4b5e-a911-08bd1881d5f9)
 
 
 ---
