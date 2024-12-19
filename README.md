@@ -5,7 +5,7 @@
 ## 14th place out of 219 teams (top 7%)
 ---
 
-![image](https://github.com/user-attachments/assets/fe30192a-302c-4b5e-a911-08bd1881d5f9)
+![image](https://github.com/user-attachments/assets/f7a5d095-8328-4fd6-87f6-7187a085e079)
 
 
 ---
